@@ -96,3 +96,11 @@ DHCP protocol is used to assign an IP address to devices when they are first con
 Use the "nslookup" command to figure out what the IP address of a website is. The computer will reach out to the DNS server and the DNS server will findout and tell us the IP address. This should cause us to see a bunch of traffic in Wireshark. 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/hxnxNuq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+TCP port 3389 is used for the Remote Desktop Protocol(RDP). Since connecting to the Windows vm uses RDP there is a constant spam of traffic in Wireshark. This is because RDP is constantly streaming a picture from the server to our local machine so Wireshark is constantly is getting flooded with RDP network packets.
+</p>
+<br />
